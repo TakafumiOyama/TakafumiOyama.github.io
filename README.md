@@ -4,9 +4,9 @@
 
 ## Disco
 
-<a href="https://iruiruirumi.bandcamp.com/releases"> <img src="irumi.jpg" width="200"> </a>
-<a href="https://memaimemaimemai.bandcamp.com/album/yokan"> <img src="memai.jpg" width="200"> </a>
-<a href="https://furuikyushoku.bandcamp.com/releases"> <img src="furuiKyushoku.jpg" width="200"> </a>
+<a href="https://iruiruirumi.bandcamp.com/releases"> <img src="irumi.jpg" width="150"> </a>
+<a href="https://memaimemaimemai.bandcamp.com/album/yokan"> <img src="memai.jpg" width="150"> </a>
+<a href="https://furuikyushoku.bandcamp.com/releases"> <img src="furuiKyushoku.jpg" width="150"> </a>
 
 ## Pages CheatSheet
 
