@@ -2,17 +2,17 @@
 
 ## いるみ
 
-![irumi](irumi.jpg)
+<a href="https://iruiruirumi.bandcamp.com/releases"> <img src="irumi.jpg" width="300"> </a>
 
 ## memai
 
-![memai](memai.jpg)
+<a href="https://memaimemaimemai.bandcamp.com/album/yokan"> <img src="memai.jpg" width="300"> </a>
 
 ## 旧い給食
 
-![furuiKyushoku](furuiKyushoku.jpg)
+<a href="https://furuikyushoku.bandcamp.com/releases"> <img src="furuiKyushoku.jpg" width="300"> </a>
 
-## GitHub Pages
+## Pages Reference
 
 You can use the [editor on GitHub](https://github.com/TakafumiOyama/TakafumiOyama.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
