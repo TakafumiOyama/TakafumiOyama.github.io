@@ -9,7 +9,7 @@
   <script type="text/javascript">
   // for centering the canvas
   var cnv;
-  var img;
+  var video;
   function centerCanvas(){
     var x = (windowWidth - width) / 2;
     var y = (windowHeight - height) / 2;
@@ -23,14 +23,15 @@
     else if(windowHeight >= windowWidth){
       cnv = createCanvas(windowWidth*0.8, windowWidth*0.8*1.618);
     }
-    centerCanvas(640, 480);
-    img = createVideo("../data/inokashira.MOV");
-    tint(100);
-    img.loop();
+    centerCanvas();
+    video = createVideo("../data/inokashira.MOV");
+    video.hide();
   }
 
   function draw() {
-    //image(img, 0, 0);
+    image(video, 0, 0, video.width/2, video.height/2);
+    tint(105);
+    image(video, video.width, 0, video.width/2, video.height/2);
   }
   </script>
   <!-- this line removes any default padding and style. you might only need one of these values set. -->
