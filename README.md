@@ -1,20 +1,14 @@
-# Code Practice
+## Code Practice
 [20170505_Test](p5Project/html/firstImpression.html)
 
 
-# いるみ
+## Disco
 
 <a href="https://iruiruirumi.bandcamp.com/releases"> <img src="irumi.jpg" width="200"> </a>
-
-# memai
-
 <a href="https://memaimemaimemai.bandcamp.com/album/yokan"> <img src="memai.jpg" width="200"> </a>
-
-# 旧い給食
-
 <a href="https://furuikyushoku.bandcamp.com/releases"> <img src="furuiKyushoku.jpg" width="200"> </a>
 
-# Pages Reference
+## Pages CheatSheet
 
 You can use the [editor on GitHub](https://github.com/TakafumiOyama/TakafumiOyama.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
