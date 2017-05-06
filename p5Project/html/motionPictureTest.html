@@ -23,8 +23,9 @@
     else if(windowHeight >= windowWidth){
       cnv = createCanvas(windowWidth*0.8, windowWidth*0.8*1.618);
     }
-    centerCanvas();
+    centerCanvas(640, 480);
     img = createVideo("../data/inokashira.MOV");
+    tint(100);
     img.loop();
   }
 
@@ -37,6 +38,6 @@
 </head>
 
 <body>
-  <p>test - first impression</p>
+  <p>test - Motion Capture</p>
 </body>
 </html>
