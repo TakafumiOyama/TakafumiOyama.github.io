@@ -24,11 +24,13 @@
       cnv = createCanvas(windowWidth*0.8, windowWidth*0.8*1.618);
     }
     centerCanvas();
-    img = loadImage("../data/inokashira.GIF");
+    //img = loadImage("../data/inokashira.GIF");
+    img = createImage("../data/inokashira.GIF");
   }
 
   function draw() {
-    image(img, 0, 0);
+    //image(img, 0, 0);
+    img.position(0, 0);
   }
   </script>
   <!-- this line removes any default padding and style. you might only need one of these values set. -->
