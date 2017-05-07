@@ -19,20 +19,21 @@
     video.hide();
     video.loop();
     noStroke();
+    fill(0);
   }
 
   function draw() {
+    background(255);
     video.loadPixels();
-    for(var j = 0; j < height; j+=mosaicSize){
-      for(var i = 0; i < width; i+=mosaicSize){
-        var r = pixels[j * width + i];
-        var g = pixels[j * width + i + 1];
-        var b = pixels[j * width + i + 2];
-        fill(r, g, b, 127);
-        //ellipse(i, j, brightness(r)/6.0, brightness(r)/6.0);
-        ellipse(i, j, 100, 100);
-      }
+    var stepSize = round(constrain(mouseX / 8, 6, 32));
+    for (var y=0; y<height; y+=stepSize) {
+    for (var x=0; x<width; x+=stepSize) {
+      var i = y * width + x;
+      var darkness = (255 - fingers.pixels[i*4]) / 255;
+      var radius = stepSize * darkness;
+      ellipse(x, y, radius, radius);
     }
+  }
     //image(video, 0, 0, video.width, video.height);
   }
   </script>
