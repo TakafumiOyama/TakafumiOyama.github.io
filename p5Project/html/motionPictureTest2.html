@@ -1,0 +1,43 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/style.css">
+  <script language="javascript" type="text/javascript" src="../libraries/p5.js"></script>
+  <script language="javascript" type="text/javascript" src="../libraries/p5.dom.js"></script>
+  <!-- uncomment lines below to include extra p5 libraries -->
+  <!--<script language="javascript" src="libraries/p5.dom.js"></script>-->
+  <!--<script language="javascript" src="libraries/p5.sound.js"></script>-->
+  <script type="text/javascript">
+  // for centering the canvas
+  var cnv;
+  var video;
+  var mosaicSize = 12;
+
+  function setup() {
+    createCanvas(654, 490);
+    video = createVideo("../data/inokashira.mp4");
+    video.hide();
+    video.loop();
+    noStroke();
+  }
+
+  function draw() {
+    video.loadPixels();
+    for(var j = 0; j < height; j+=mosaicSize){
+      for(var i = 0; i < width; i+=mosaicSize){
+        color c = pixels[j * width + i];
+        fill(c, 127);
+        ellipse(i, j, brightness(c)/6.0, brightness(c)/6.0);
+      }
+    }
+    //image(video, 0, 0, video.width, video.height);
+  }
+  </script>
+  <!-- this line removes any default padding and style. you might only need one of these values set. -->
+  <!--<style> body {padding: 10; margin: 10;} </style>-->
+</head>
+
+<body>
+  <!--<p>test - Motion Capture</p>-->
+</body>
+</html>
