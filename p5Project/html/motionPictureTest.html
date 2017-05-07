@@ -18,12 +18,7 @@
   }*/
 
   function setup() {
-    if(windowHeight <= windowWidth){
-      cnv = createCanvas(windowHeight*0.8*1.618, windowHeight*0.8);
-    }
-    else if(windowHeight >= windowWidth){
-      cnv = createCanvas(windowWidth*0.8, windowWidth*0.8*1.618);
-    }
+    createCanvas(654, 490);
     //centerCanvas();
     //createCanvas(windowWidth, windowHeight);
     video = createVideo("../data/inokashira.MOV");
