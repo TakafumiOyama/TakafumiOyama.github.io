@@ -29,14 +29,15 @@
     for (var y=0; y<height; y+=stepSize) {
     for (var x=0; x<width; x+=stepSize) {
       var i = y * width + x;
-      var darkness = (255 - video.pixels[i*4+3]) / 255;
+      var darkness = (255 - video.pixels[i*4]) / 255;
+      var brightness = brightness(video.pixels[i*4]);
       var radius = stepSize * darkness;
       var r = video.pixels[i*4];
       var g = video.pixels[i*4+1];
       var b = video.pixels[i*4+2];
       var c = color(r, g, b);
       fill(c);
-      ellipse(x, y, radius, radius);
+      ellipse(x, y, brightness, brightness);
     }
   }
     //image(video, 0, 0, video.width, video.height);
