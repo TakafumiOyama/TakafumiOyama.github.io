@@ -11,16 +11,9 @@
   // for centering the canvas
   var cnv;
   var video;
-  /*function centerCanvas(){
-    var x = (windowWidth - width) / 2;
-    var y = (windowHeight - height) / 2;
-    cnv.position(x, y);
-  }*/
 
   function setup() {
     createCanvas(654, 490);
-    //centerCanvas();
-    //createCanvas(windowWidth, windowHeight);
     video = createVideo("../data/inokashira.mp4");
     video.hide();
     video.loop();
@@ -28,8 +21,6 @@
 
   function draw() {
     image(video, 0, 0, video.width, video.height);
-    //tint(105);
-    //image(video, video.width, 0, video.width/2, video.height/2);
   }
   </script>
   <!-- this line removes any default padding and style. you might only need one of these values set. -->
