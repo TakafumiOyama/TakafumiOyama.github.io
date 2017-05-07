@@ -25,8 +25,10 @@
     video.loadPixels();
     for(var j = 0; j < height; j+=mosaicSize){
       for(var i = 0; i < width; i+=mosaicSize){
-        //color c = video.pixels[j * width + i];
-        fill(video.pixels[j * width + i], video.pixels[j * width + i+1], video.pixels[j * width + i+2], 127);
+        var r = pixels[j * width + i];
+        var g = pixels[j * width + i + 1];
+        var b = pixels[j * width + i + 2];
+        fill(r, g, b, 127);
         ellipse(i, j, brightness(video.pixels[j * width + i])/6.0, brightness(video.pixels[j * width + i])/6.0);
       }
     }
