@@ -31,9 +31,9 @@
       var i = y * width + x;
       var darkness = (255 - video.pixels[i*4]) / 255;
       var radius = stepSize * darkness;
-      var r = video.pixels[i*4-3];
-      var g = video.pixels[i*4-2];
-      var b = video.pixels[i*4-1];
+      var r = video.pixels[i];
+      var g = video.pixels[i*2];
+      var b = video.pixels[i*3];
       fill(r, g, b);
       ellipse(x, y, radius, radius);
     }
