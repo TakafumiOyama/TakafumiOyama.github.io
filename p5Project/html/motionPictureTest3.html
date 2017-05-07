@@ -37,7 +37,7 @@
       var b = video.pixels[i*4+2];
       var c = color(r, g, b);
       fill(c);
-      ellipse(x, y, brightness, brightness);
+      ellipse(x, y, brightness/6.0, brightness/6.0);
     }
   }
     //image(video, 0, 0, video.width, video.height);
