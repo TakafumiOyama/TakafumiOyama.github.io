@@ -25,9 +25,9 @@
     video.loadPixels();
     for(var j = 0; j < height; j+=mosaicSize){
       for(var i = 0; i < width; i+=mosaicSize){
-        color c = video.pixels[j * width + i];
-        fill(c, 127);
-        ellipse(i, j, brightness(c)/6.0, brightness(c)/6.0);
+        //color c = video.pixels[j * width + i];
+        fill(video.pixels[j * width + i], 127);
+        ellipse(i, j, brightness(video.pixels[j * width + i])/6.0, brightness(video.pixels[j * width + i])/6.0);
       }
     }
     //image(video, 0, 0, video.width, video.height);
